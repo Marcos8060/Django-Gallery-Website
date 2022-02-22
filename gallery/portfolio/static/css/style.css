@@ -63,3 +63,14 @@ p,h3,h4{
     margin: 25px;
     border-radius: 10px;
 }
+/* footer */
+footer{
+    background: #2E2E2E;
+    color: #E4B96C;
+    padding: 10px;
+}
+footer > .foot_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
