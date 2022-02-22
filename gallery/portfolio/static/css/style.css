@@ -4,11 +4,11 @@
 body{
     background: #DEE2EB;
 }
-h1, h2{
+h1, h2,h5,small{
     font-family: 'Poppins', sans-serif;
 }
 
-p,h3{
+p,h3,h4{
     font-family: 'Nunito', sans-serif;
 }
 /* navbar */
@@ -53,4 +53,13 @@ p,h3{
 }
 .service_Img > img{
     border-radius: 20px;
+}
+/* Gallery section */
+.gallery_section{
+    padding-top: 15vh;
+    background: #F9F9F9;
+}
+.col-4 > img{
+    margin: 25px;
+    border-radius: 10px;
 }
