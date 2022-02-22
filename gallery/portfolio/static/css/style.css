@@ -27,7 +27,22 @@ p{
 .intro{
     margin-top: 10vh;
 }
+.intro > h1 > span{
+    color: #E4B96C;
+}
 .intro > h1{
     font-weight: bolder;
     font-size: 50px;
+}
+.hero_Img > img{
+    margin-top: -22vh;
+}
+.btn1{
+    background: #E4B96C;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    width: 120px;
 }
