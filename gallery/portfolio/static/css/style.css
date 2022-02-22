@@ -12,6 +12,14 @@ p{
     font-family: 'Nunito', sans-serif;
 }
 /* navbar */
-.nav-item > a{
+.navbar-brand{
+    font-size: 40px;
+}
+.navbar-brand, .nav-item > a{
     color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.navbar-brand:hover, .nav-item > a:hover{
+    color: #E4B96C;
 }
