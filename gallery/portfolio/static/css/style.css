@@ -4,11 +4,11 @@
 body{
     background: #DEE2EB;
 }
-h1{
+h1, h2{
     font-family: 'Poppins', sans-serif;
 }
 
-p{
+p,h3{
     font-family: 'Nunito', sans-serif;
 }
 /* navbar */
@@ -45,4 +45,12 @@ p{
     border: none;
     height: 40px;
     width: 120px;
+}
+/* service section */
+.service_section{
+    background: #F9F9F9;
+    padding-top: 20vh;
+}
+.service_Img > img{
+    border-radius: 20px;
 }
