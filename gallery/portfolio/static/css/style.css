@@ -23,3 +23,11 @@ p{
 .navbar-brand:hover, .nav-item > a:hover{
     color: #E4B96C;
 }
+/* hero section */
+.intro{
+    margin-top: 10vh;
+}
+.intro > h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
