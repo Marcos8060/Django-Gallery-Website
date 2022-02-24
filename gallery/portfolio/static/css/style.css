@@ -11,6 +11,9 @@ h1, h2,h5,small{
 p,h3,h4{
     font-family: 'Nunito', sans-serif;
 }
+.navbar-toggler:focus, .navbar-toggler:active{
+    box-shadow: none;
+}
 /* navbar */
 .navbar-brand{
     font-size: 40px;
@@ -59,8 +62,8 @@ p,h3,h4{
     padding-top: 15vh;
     background: #F9F9F9;
 }
-.col-4 > img{
-    margin: 10px;
+.col-md-4 > img{
+    margin: 3px;
     border-radius: 10px;
 }
 /* footer */
