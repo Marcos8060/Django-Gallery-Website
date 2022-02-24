@@ -6,6 +6,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('',views.gallery_list,name= 'gallery_list'),
+    path('<slug:category_slug>',views.gallery_list,name='gallery_by_category'),
     path('<int:id>/',views.gallery_detail,name='gallery_detail')
 ]
 if settings.DEBUG:

@@ -16,6 +16,9 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('gallery_by_category',args=[self.slug])
+
 class Image(models.Model):
     location = models.ForeignKey(Location,on_delete=models.CASCADE) # one image belongs to a single location
     category = models.ForeignKey(Category,on_delete=models.CASCADE) # one image belongs to a single category

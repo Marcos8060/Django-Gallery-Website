@@ -14,6 +14,15 @@ p,h3,h4{
 .navbar-toggler:focus, .navbar-toggler:active{
     box-shadow: none;
 }
+.dropdown-menu{
+    background: #2E2E2E;
+}
+.dropdown-item{
+    color: #E4B96C;
+}
+.dropdown{
+    color: black;
+}
 /* navbar */
 .navbar-brand{
     font-size: 40px;
@@ -66,6 +75,14 @@ p,h3,h4{
     margin: 3px;
     border-radius: 10px;
     height: 250px;
+}
+/* details section */
+.detail_image{
+    height: 362px;
+}
+.info{
+    background: #F9F9F9;
+    padding-top: 20px;
 }
 /* footer */
 footer{

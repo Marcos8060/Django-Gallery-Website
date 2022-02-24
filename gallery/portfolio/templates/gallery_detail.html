@@ -5,11 +5,15 @@
 <div class="container">
     <div class="row mt-5">
         <div class="col-md-6">
-            <img class="img-fluid" src="{{ images.image.url }}" alt="">
+            <img class="img-fluid detail_image" src="{{ images.image.url }}" alt="">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 info">
             <h3>{{ images.name }}</h3>
             <p>{{ images.description }}</p>
+            <div class="d-flex align-items-center justify-content-between" style="margin-top: 250px;">
+                <small>Location: {{ images.location }}</small>
+                <small>Category: {{ images.category }}</small>
+            </div>
         </div>
     </div>
 </div>
