@@ -1,3 +1,4 @@
+from django.urls import reverse
 from django.db import models
 
 # Create your models here
@@ -21,3 +22,6 @@ class Image(models.Model):
     name= models.CharField(max_length=200)
     description = models.TextField(max_length=300)
     image = models.ImageField(upload_to = 'articles/',blank=True)
+
+    def get_absolute_url(self):
+        return reverse('gallery_detail',args=[self.id])

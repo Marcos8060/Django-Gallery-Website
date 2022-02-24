@@ -36,24 +36,12 @@
             <small>Since 2011 we've been working with a lot of different projects and large companies.</small>
         </div>
         <div class="row" style="margin-top: 10vh;">
-            <div class="col-md-4">
-                <img class="img-fluid img" src="../static/Images/wed1.jpg" alt="">
+            {% for image in images %}
+            <div class="col-md-4 mb-4">
+                <img class="img-fluid img" src="{{ image.image.url }}" alt="">
+                <p><a href="{{ image.get_absolute_url }}">{{ image.name}}</a></p>
             </div>
-            <div class="col-md-4 mb-3">
-                <img class="img-fluid" src="../static/Images/hockey.jpg" alt="">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img class="img-fluid" src="../static/Images/run.jpg" alt="">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img class="img-fluid" src="../static/Images/wed1.jpg" alt="">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img class="img-fluid" src="../static/Images/hockey.jpg" alt="">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img class="img-fluid" src="../static/Images/run.jpg" alt="">
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
