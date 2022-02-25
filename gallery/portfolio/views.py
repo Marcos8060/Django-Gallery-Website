@@ -19,3 +19,8 @@ def gallery_detail(request,id):
     images = get_object_or_404(Image,id=id)
     return render(request,'gallery_detail.html',{'images':images})
 
+def category_list(request):
+    images = Image.objects.all()
+    return render(request,'category.html',{'images':images})
+
+
