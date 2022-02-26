@@ -1,14 +1,13 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
 
 <div class="container">
     <div class="row">
         {% for image in images %}
         <div class="col-md-4">
-            <img class="img-fluid" src="{{ image.image.url }}" alt="">
-            <p><a href="">{{ image.name }}</a></p>
+            <img src="{{ image.image.url }}" alt="">
+            <p><a href="{{ image.get_absolute_url }}" class="text-decoration-none">{{ image.name }}</a></p>
         </div>
         {% endfor %}
     </div>

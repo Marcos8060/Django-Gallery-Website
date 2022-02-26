@@ -1,8 +1,14 @@
 from unicodedata import category
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, redirect, render
 from .models import Image,Category,Location
 
 # Create your views here.
+def home_page(request):
+    categories = Category.objects.all()
+    images = Image.objects.all()
+    return render(request,'index.html',{'categories':categories,'images':images})
+
+
 def gallery_list(request,category_slug=None):
     category = None
     categories = Category.objects.all()
@@ -10,7 +16,7 @@ def gallery_list(request,category_slug=None):
     if category_slug:
         category = get_object_or_404(Category,slug=category_slug)
         images = images.filter(category=category)
-    return render(request,'index.html',{'categories':categories,
+    return render(request,'category.html',{'categories':categories,
                                          'category':category,
                                           'images':images
                                         })
@@ -19,8 +25,8 @@ def gallery_detail(request,id):
     images = get_object_or_404(Image,id=id)
     return render(request,'gallery_detail.html',{'images':images})
 
-def category_list(request):
-    images = Image.objects.all()
-    return render(request,'category.html',{'images':images})
+
+
+
 
 
