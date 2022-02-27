@@ -7,11 +7,6 @@
  A gallery website where users can view photos based on categories and see their details
 ## Setup and Installation Requirements
 
-## Project Design
-
-![Design](./portfolio/static/Images/design.png)
-
-
 * Python version 3.8
 * pip
 * Git
@@ -19,6 +14,10 @@
 * pip install django
 * pip install gunicorn
 * install heroku cli
+
+## Project Design
+![Design](./portfolio/static/Images/design.png)
+
 
 ## How to run the application
 
