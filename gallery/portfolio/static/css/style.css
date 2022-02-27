@@ -66,6 +66,10 @@ p,h3,h4{
 .service_Img > img{
     border-radius: 20px;
 }
+.icon1{
+    background: #2E2E2E;
+    height: 50px;
+}
 /* Gallery section */
 .gallery_section{
     padding-top: 15vh;
