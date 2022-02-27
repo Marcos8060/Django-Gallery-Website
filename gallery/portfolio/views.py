@@ -30,3 +30,5 @@ def gallery_detail(request,id):
 
 
 
+
+

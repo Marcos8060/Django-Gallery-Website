@@ -7,6 +7,10 @@ class Location(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_absolute_url(self):
+        return reverse('location_list',args=[self.id])
+
 
 
 class Category(models.Model):
@@ -29,3 +33,4 @@ class Image(models.Model):
 
     def get_absolute_url(self):
         return reverse('gallery_detail',args=[self.id])
+
